@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="Contact">
+        <h2>Contact Me</h2>
+
+        <form action="">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off" required>
+                    <div class="error-text">Full Name can't be blank</div>
+                </div>
+                <div class="input-field field">
+                     <input type="email" placeholder="Email" id="email" class="item" autocomplete="off" required>
+                     <div class="error-text">Email can't be blank</div>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="number" placeholder="Phone Number" id="phone" class="item" autocomplete="off" required>
+                    <div class="error-text">Phone Number can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                    <div class="error-text">Subject can't be blank</div>
+                </div>
+            </div>
+
+            <div class="textarea field">
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+        
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
